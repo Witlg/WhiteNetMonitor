@@ -8,10 +8,10 @@
 - **Minimalistic UI:** Clean interface that focuses on the data that matters.
 - **Lightweight:** Runs in the background without consuming significant system resources.
 
-## 📱 Platform Support
-| Platform |       Status     |
-|  Windows | ✅ Supported     |
-|   macOS  | ❌ Not supported |
-|   Linux  | ❌ Not supported |
-|  Android | ✅ Supported     |
-|   iOS    | ❌ Not supported |
+## 📱 Platform Support<br>
+| Platform |       Status     |<br>
+|  Windows | ✅ Supported     |<br>
+|   macOS  | ❌ Not supported |<br>
+|   Linux  | ❌ Not supported |<br>
+|  Android | ✅ Supported     |<br>
+|   iOS    | ❌ Not supported |<br>
