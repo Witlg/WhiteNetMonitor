@@ -1,0 +1,35 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net472</TargetFramework>
+    <UseWPF>true</UseWPF>
+    <UseWindowsForms>true</UseWindowsForms>
+    <AssemblyName>WhiteNetInstaller</AssemblyName>
+    <RootNamespace>WhiteNetInstaller</RootNamespace>
+    <LangVersion>latest</LangVersion>
+    <Nullable>disable</Nullable>
+    <DebugType>none</DebugType>
+    <Version>2.0.0</Version>
+    <Product>White Network Monitor Setup</Product>
+    <Authors>White Team</Authors>
+    <ApplicationIcon>Assets\appico.ico</ApplicationIcon>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.NETFramework.ReferenceAssemblies" Version="1.0.3" PrivateAssets="all" />
+    <Reference Include="Microsoft.CSharp" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <!-- полезная нагрузка собирается заранее: см. Scripts\build_all.ps1 -->
+    <EmbeddedResource Include="..\WhiteNet.Wpf\bin\Release\net472\WhiteNetMonitor.exe"
+                      LogicalName="payload.monitor.exe" />
+    <EmbeddedResource Include="..\WhiteNet.Uninstaller\bin\Release\net472\WhiteNetUninstall.exe"
+                      LogicalName="payload.uninstall.exe" />
+    <EmbeddedResource Include="..\Payloads\WhiteClient.exe"
+                      LogicalName="payload.client.exe" />
+    <Resource Include="Assets\logo.png" />
+  </ItemGroup>
+
+</Project>

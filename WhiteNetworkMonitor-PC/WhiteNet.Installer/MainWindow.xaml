@@ -1,0 +1,243 @@
+<Window x:Class="WhiteNetInstaller.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Установка White Network Monitor"
+        Width="700" Height="470"
+        WindowStyle="None" AllowsTransparency="True" Background="Transparent"
+        WindowStartupLocation="CenterScreen"
+        ResizeMode="NoResize" ShowInTaskbar="True">
+
+    <Grid Margin="14">
+        <Border CornerRadius="20"
+                BorderBrush="#4D3A2A66" BorderThickness="1"
+                Background="{StaticResource BrushWindowBg}">
+            <Border.Effect>
+                <DropShadowEffect BlurRadius="34" ShadowDepth="0"
+                                  Opacity="0.55" Color="#7C3AED"/>
+            </Border.Effect>
+
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="196"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+
+                <Border Grid.Column="0" CornerRadius="20,0,0,20"
+                        Background="{StaticResource BrushSidebar}"
+                        MouseLeftButtonDown="Root_Drag">
+                    <StackPanel Margin="22,26,18,20">
+                        <Border CornerRadius="14" Width="72" Height="72"
+                                HorizontalAlignment="Left">
+                            <Image Source="Assets/logo.png" Stretch="UniformToFill"
+                                   ClipToBounds="True"/>
+                        </Border>
+                        <TextBlock Text="White Network Monitor"
+                                   FontSize="15" FontWeight="SemiBold" TextWrapping="Wrap"
+                                   Foreground="{StaticResource BrushTitleText}"
+                                   Margin="1,16,0,0"/>
+                        <TextBlock Text="WHITE TEAM · SETUP v2.0"
+                                   FontSize="9" Foreground="#8E7FB0" Margin="2,4,0,0"/>
+
+                        <StackPanel x:Name="StepList" Margin="0,34,0,0">
+                            <StackPanel Orientation="Horizontal" x:Name="Step0" Margin="0,0,0,18">
+                                <Ellipse x:Name="Step0D" Width="9" Height="9"
+                                         VerticalAlignment="Center"
+                                         Fill="{StaticResource BrushAccent}"/>
+                                <TextBlock x:Name="Step0T" Text="Приветствие" FontSize="12.5"
+                                           FontWeight="SemiBold" Foreground="White"
+                                           Margin="11,0,0,0" VerticalAlignment="Center"/>
+                            </StackPanel>
+                            <StackPanel Orientation="Horizontal" x:Name="Step1" Margin="0,0,0,18">
+                                <Ellipse x:Name="Step1D" Width="9" Height="9"
+                                         VerticalAlignment="Center" Fill="#3E2F5C"/>
+                                <TextBlock x:Name="Step1T" Text="Параметры" FontSize="12.5"
+                                           Foreground="{StaticResource BrushDim}"
+                                           Margin="11,0,0,0" VerticalAlignment="Center"/>
+                            </StackPanel>
+                            <StackPanel Orientation="Horizontal" x:Name="Step2" Margin="0,0,0,18">
+                                <Ellipse x:Name="Step2D" Width="9" Height="9"
+                                         VerticalAlignment="Center" Fill="#3E2F5C"/>
+                                <TextBlock x:Name="Step2T" Text="Установка" FontSize="12.5"
+                                           Foreground="{StaticResource BrushDim}"
+                                           Margin="11,0,0,0" VerticalAlignment="Center"/>
+                            </StackPanel>
+                            <StackPanel Orientation="Horizontal" x:Name="Step3" Margin="0,0,0,18">
+                                <Ellipse x:Name="Step3D" Width="9" Height="9"
+                                         VerticalAlignment="Center" Fill="#3E2F5C"/>
+                                <TextBlock x:Name="Step3T" Text="Готово" FontSize="12.5"
+                                           Foreground="{StaticResource BrushDim}"
+                                           Margin="11,0,0,0" VerticalAlignment="Center"/>
+                            </StackPanel>
+                        </StackPanel>
+
+                        <TextBlock Text="установка без прав администратора"
+                                   FontSize="10" Foreground="#6E5F92"
+                                   Margin="1,0,0,0" VerticalAlignment="Bottom"
+                                   TextWrapping="Wrap"/>
+                    </StackPanel>
+                </Border>
+
+                <Grid Grid.Column="1" MouseLeftButtonDown="Root_Drag">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="52"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="Auto"/>
+                    </Grid.RowDefinitions>
+
+                    <Grid Grid.Row="0" Background="Transparent">
+                        <TextBlock x:Name="PageTitle" Text="Добро пожаловать!"
+                                   FontSize="17" FontWeight="SemiBold"
+                                   Foreground="{StaticResource BrushTitleText}"
+                                   VerticalAlignment="Center" Margin="26,0,0,0"/>
+                        <Button Style="{StaticResource CloseBtn}" Content="✕"
+                                HorizontalAlignment="Right" VerticalAlignment="Center"
+                                Margin="0,0,14,0" Click="BtnCancel_Click"/>
+                    </Grid>
+
+                    <Grid Grid.Row="1">
+                        <Grid x:Name="PageWelcome" Margin="28,4,30,8">
+                            <StackPanel>
+                                <TextBlock Text="Сейчас мы установим на твой компьютер:"
+                                           FontSize="13.5" Foreground="{StaticResource BrushDim}"/>
+                                <StackPanel Margin="0,16,0,0">
+                                    <StackPanel Orientation="Horizontal" Margin="0,0,0,12">
+                                        <Ellipse Width="8" Height="8" Fill="{StaticResource BrushAccent}"
+                                                 VerticalAlignment="Center"/>
+                                        <TextBlock Text="White Network Monitor — монитор сети и системы в трее"
+                                                   FontSize="13.5" Foreground="{StaticResource BrushText}"
+                                                   Margin="12,0,0,0" TextWrapping="Wrap"/>
+                                    </StackPanel>
+                                    <StackPanel Orientation="Horizontal" Margin="0,0,0,12">
+                                        <Ellipse Width="8" Height="8" Fill="{StaticResource BrushAccent}"
+                                                 VerticalAlignment="Center"/>
+                                        <TextBlock Text="Автозапуск White Client (Discord RPC) вместе с монитором"
+                                                   FontSize="13.5" Foreground="{StaticResource BrushText}"
+                                                   Margin="12,0,0,0" TextWrapping="Wrap"/>
+                                    </StackPanel>
+                                    <StackPanel Orientation="Horizontal">
+                                        <Ellipse Width="8" Height="8" Fill="{StaticResource BrushAccent}"
+                                                 VerticalAlignment="Center"/>
+                                        <TextBlock Text="Ярлыки и полное удаление через «Приложения Windows»"
+                                                   FontSize="13.5" Foreground="{StaticResource BrushText}"
+                                                   Margin="12,0,0,0" TextWrapping="Wrap"/>
+                                    </StackPanel>
+                                </StackPanel>
+                                <Border Background="#22000000" CornerRadius="12"
+                                        Padding="14,10" Margin="0,24,0,0"
+                                        HorizontalAlignment="Left">
+                                    <TextBlock
+                                        Text="Ничего системного не трогаем — всё живёт в папке пользователя."
+                                        FontSize="11.5" MaxWidth="380" TextWrapping="Wrap"
+                                        Foreground="{StaticResource BrushDim}"/>
+                                </Border>
+                            </StackPanel>
+                        </Grid>
+
+                        <Grid x:Name="PageOptions" Visibility="Collapsed" Margin="28,4,30,8">
+                            <StackPanel>
+                                <TextBlock Text="Папка установки"
+                                           Style="{StaticResource Caption}"/>
+                                <Grid Margin="0,10,0,0">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="*"/>
+                                        <ColumnDefinition Width="10"/>
+                                        <ColumnDefinition Width="Auto"/>
+                                    </Grid.ColumnDefinitions>
+                                    <Border CornerRadius="10" Background="#22000000"
+                                            BorderBrush="#33FFFFFF" BorderThickness="1"
+                                            Padding="10,0">
+                                        <TextBox x:Name="DirBox" Background="Transparent"
+                                                 BorderThickness="0" Foreground="White"
+                                                 FontSize="12.5" Height="30"
+                                                 VerticalContentAlignment="Center"/>
+                                    </Border>
+                                    <Button Grid.Column="2" Style="{StaticResource GhostBtn}"
+                                            Content="Обзор…" Click="BtnBrowse_Click"/>
+                                </Grid>
+
+                                <TextBlock Text="Дополнительно" Style="{StaticResource Caption}"
+                                           Margin="0,22,0,0"/>
+
+                                <CheckBox x:Name="OptDesktop" Content="Ярлык на рабочем столе"
+                                          IsChecked="True" Margin="0,12,0,0"
+                                          Foreground="{StaticResource BrushText}" FontSize="12.5"/>
+                                <CheckBox x:Name="OptAutostart" Content="Запускать монитор с Windows"
+                                          IsChecked="True" Margin="0,10,0,0"
+                                          Foreground="{StaticResource BrushText}" FontSize="12.5"/>
+                                <CheckBox x:Name="OptHideIcon" Content="Скрыть стандартную сетевую иконку Windows"
+                                          IsChecked="False" Margin="0,10,0,0"
+                                          Foreground="{StaticResource BrushText}" FontSize="12.5"/>
+                                <TextBlock Text="(вернётся при удалении программы; потребуется перезапуск Проводника)"
+                                           FontSize="10.5" Foreground="#6E5F92" Margin="24,4,0,0"
+                                           TextWrapping="Wrap"/>
+                            </StackPanel>
+                        </Grid>
+
+                        <Grid x:Name="PageProgress" Visibility="Collapsed" Margin="28,4,30,8"
+                              VerticalAlignment="Center">
+                            <StackPanel>
+                                <TextBlock x:Name="StageLabel" Text="Подготовка…"
+                                           FontSize="14" FontWeight="SemiBold"
+                                           Foreground="{StaticResource BrushText}"/>
+                                <Grid Margin="0,18,0,0">
+                                    <ProgressBar x:Name="Bar" Style="{StaticResource VioletBar}"
+                                                 Minimum="0" Maximum="100"/>
+                                    <TextBlock x:Name="PctLabel" Text="0%"
+                                               HorizontalAlignment="Right" VerticalAlignment="Center"
+                                               Margin="0,0,-40,0" FontSize="12"
+                                               Foreground="{StaticResource BrushDim}"/>
+                                </Grid>
+                                <TextBlock x:Name="DetailLabel" Text=""
+                                           FontSize="11.5" Foreground="{StaticResource BrushDim}"
+                                           Margin="1,14,0,0"/>
+                            </StackPanel>
+                        </Grid>
+
+                        <Grid x:Name="PageFinish" Visibility="Collapsed" Margin="28,4,30,8">
+                            <StackPanel>
+                                <StackPanel Orientation="Horizontal">
+                                    <Border Width="52" Height="52" CornerRadius="26"
+                                            Background="{StaticResource BrushGreen}">
+                                        <Border.Effect>
+                                            <DropShadowEffect BlurRadius="20" ShadowDepth="0"
+                                                              Opacity="0.85" Color="#34D399"/>
+                                        </Border.Effect>
+                                        <TextBlock Text="✓" FontSize="26" FontWeight="Bold"
+                                                   Foreground="White"
+                                                   HorizontalAlignment="Center"
+                                                   VerticalAlignment="Center"/>
+                                    </Border>
+                                    <StackPanel Margin="16,0,0,0" VerticalAlignment="Center">
+                                        <TextBlock Text="Всё установлено!" FontSize="19"
+                                                   FontWeight="Bold"
+                                                   Foreground="{StaticResource BrushText}"/>
+                                        <TextBlock Text="Монитор уже ждёт тебя в трее."
+                                                   FontSize="12"
+                                                   Foreground="{StaticResource BrushDim}"
+                                                   Margin="1,5,0,0"/>
+                                    </StackPanel>
+                                </StackPanel>
+                                <CheckBox x:Name="OptRunNow" Content="Запустить White Network Monitor"
+                                          IsChecked="True" Margin="0,24,0,0"
+                                          Foreground="{StaticResource BrushText}" FontSize="12.5"/>
+                                <TextBlock x:Name="FinishNote" Text=""
+                                           FontSize="10.5" Foreground="#6E5F92"
+                                           Margin="0,14,0,0" TextWrapping="Wrap"/>
+                            </StackPanel>
+                        </Grid>
+                    </Grid>
+
+                    <Grid Grid.Row="2" Margin="28,8,30,20">
+                        <Button x:Name="BtnBack" Style="{StaticResource GhostBtn}"
+                                Content="Назад" HorizontalAlignment="Left"
+                                IsEnabled="False" Visibility="Collapsed"
+                                Click="BtnBack_Click"/>
+                        <Button x:Name="BtnNext" Style="{StaticResource GradBtn}"
+                                Content="Далее →" HorizontalAlignment="Right"
+                                Click="BtnNext_Click"/>
+                    </Grid>
+                </Grid>
+            </Grid>
+        </Border>
+    </Grid>
+</Window>
