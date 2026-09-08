@@ -15,3 +15,25 @@
 |   Linux  | ❌ Not supported |<br>
 |  Android | ✅ Supported     |<br>
 |   iOS    | ❌ Not supported |<br>
+
+
+## 💖 Support the Project
+
+If you like **WhiteNetMonitoring** and want to support its development:
+
+### International (any country)
+[![Donate via DonationAlerts](https://img.shields.io/badge/DonationAlerts-Поддержать-red?style=for-the-badge&logo=githubsponsors)](https://dalink.to/wtfwhite)
+
+### Russia / СНГ
+[![Donate via ЮMoney](https://img.shields.io/badge/ЮMoney-Поддержать-0033CC?style=for-the-badge&logo=yandex)](https://yoomoney.ru/to/4100119622192067)
+
+---
+
+### 📱 QR Code (quick donation)
+Scan this QR code to donate via **DonationAlerts**:
+
+![QR Code](https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://dalink.to/wtfwhite)
+
+---
+
+Thank you for your support! ❤️
