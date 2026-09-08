@@ -15,3 +15,5 @@
 |   Linux  | ❌ Not supported |<br>
 |  Android | ✅ Supported     |<br>
 |   iOS    | ❌ Not supported |<br>
+
+[![Поддержать проект](https://img.shields.io/badge/☕-Поддержать_проект-orange?style=for-the-badge&logo=githubsponsors)](https://github.com/Witlg/WhiteNetMonitor)
