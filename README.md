@@ -1,4 +1,4 @@
-# 🌐 WhiteNetMonitoring v2.0
+# 🌐 WhiteNetMonitoring v2.0                                              [![Поддержать проект](https://img.shields.io/badge/☕-Поддержать_проект-orange?style=for-the-badge&logo=githubsponsors)](https://yoomoney.ru/to/4100119622192067)
 
 **WhiteNetMonitoring** is a lightweight, cross-platform network monitoring application designed to give you complete visibility into your internet connection. Whether you are on a desktop or a smartphone, it provides real-time statistics on **incoming (Download)** and **outgoing (Upload)** traffic.
 
@@ -15,5 +15,3 @@
 |   Linux  | ❌ Not supported |<br>
 |  Android | ✅ Supported     |<br>
 |   iOS    | ❌ Not supported |<br>
-
-[![Поддержать проект](https://img.shields.io/badge/☕-Поддержать_проект-orange?style=for-the-badge&logo=githubsponsors)](https://github.com/Witlg/WhiteNetMonitor)
