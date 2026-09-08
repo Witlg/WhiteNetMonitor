@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">White Network Monitor</string>
+    <string name="subtitle">WHITE TEAM · MOBILE</string>
+    <string name="tab_net">🌐 Network</string>
+    <string name="tab_sys">📊 System</string>
+    <string name="tab_set">⚙ Settings</string>
+
+    <string name="st_check">Checking…</string>
+    <string name="st_ok">Online</string>
+    <string name="st_fail">No network</string>
+    <string name="net_hint_on">tap the dot — connection controls</string>
+    <string name="net_hint_off">no network — tap to open settings</string>
+
+    <string name="ip_cap">LOCAL IP ADDRESS</string>
+    <string name="dl_cap">DOWNLOAD ↓</string>
+    <string name="ul_cap">UPLOAD ↑</string>
+    <string name="sp_sub">real interface speed</string>
+    <string name="p_cap">PING TO 8.8.8.8</string>
+    <string name="p_hint">press “Check”</string>
+    <string name="p_busy">measuring…</string>
+    <string name="p_fail">no reply</string>
+    <string name="btn_check">⟳ Check</string>
+
+    <string name="ram_cap">MEMORY</string>
+    <string name="disk_cap">DEVICE STORAGE</string>
+    <string name="bat_cap">BATTERY</string>
+    <string name="os_cap">DEVICE</string>
+    <string name="up_cap">UPTIME</string>
+
+    <string name="set_lang">LANGUAGE</string>
+    <string name="lang_en_sub">English</string>
+    <string name="lang_ru_sub">Russian</string>
+    <string name="set_note">Applied instantly and remembered</string>
+    <string name="about_cap">ABOUT</string>
+    <string name="about_l2">Made by White Team · Android edition</string>
+    <string name="tg_btn">✈  Our Telegram — WhteTeam</string>
+    <string name="donate_btn">❤  Donations (Support)</string>
+    <string name="confirm_net_title">Connection controls</string>
+    <string name="confirm_net_msg">Android doesn\'t let apps silently toggle Wi-Fi or mobile data.\nOpen the system internet panel?</string>
+    <string name="yes">Yes</string>
+    <string name="cancel">Cancel</string>
+    <string name="ms_unit">ms</string>
+    <string name="unit_b">B/s</string>
+    <string name="unit_kb">KB/s</string>
+    <string name="unit_mb">MB/s</string>
+</resources>

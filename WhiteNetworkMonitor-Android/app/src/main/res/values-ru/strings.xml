@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">White Network Monitor</string>
+    <string name="subtitle">WHITE TEAM · MOBILE</string>
+    <string name="tab_net">🌐 Сеть</string>
+    <string name="tab_sys">📊 Система</string>
+    <string name="tab_set">⚙ Настройки</string>
+
+    <string name="st_check">Проверка…</string>
+    <string name="st_ok">Онлайн</string>
+    <string name="st_fail">Нет сети</string>
+    <string name="net_hint_on">нажми на кружок — управление связью</string>
+    <string name="net_hint_off">нет сети — нажми, чтобы открыть настройки</string>
+
+    <string name="ip_cap">ЛОКАЛЬНЫЙ IP-АДРЕС</string>
+    <string name="dl_cap">ЗАГРУЗКА ↓</string>
+    <string name="ul_cap">ОТДАЧА ↑</string>
+    <string name="sp_sub">реальная скорость интерфейсов</string>
+    <string name="p_cap">ПИНГ ДО 8.8.8.8</string>
+    <string name="p_hint">нажми «Проверить»</string>
+    <string name="p_busy">измеряю…</string>
+    <string name="p_fail">нет ответа</string>
+    <string name="btn_check">⟳ Проверить</string>
+
+    <string name="ram_cap">ОПЕРАТИВНАЯ ПАМЯТЬ</string>
+    <string name="disk_cap">ПАМЯТЬ УСТРОЙСТВА</string>
+    <string name="bat_cap">БАТАРЕЯ</string>
+    <string name="os_cap">УСТРОЙСТВО</string>
+    <string name="up_cap">ВРЕМЯ РАБОТЫ</string>
+
+    <string name="set_lang">ЯЗЫК</string>
+    <string name="lang_en_sub">Английский</string>
+    <string name="lang_ru_sub">Русский</string>
+    <string name="set_note">Применяется мгновенно и запоминается</string>
+    <string name="about_cap">О ПРОГРАММЕ</string>
+    <string name="about_l2">Сделано White Team · версия для Android</string>
+    <string name="tg_btn">✈  Наш Telegram — WhteTeam</string>
+    <string name="donate_btn">❤  Пожертвования (Поддержка)</string>
+    <string name="confirm_net_title">Управление связью</string>
+    <string name="confirm_net_msg">Android не даёт приложениям молча выключать Wi-Fi или мобильные данные.\nОткрыть системную панель интернета?</string>
+    <string name="yes">Да</string>
+    <string name="cancel">Отмена</string>
+    <string name="ms_unit">мс</string>
+    <string name="unit_b">Б/с</string>
+    <string name="unit_kb">КБ/с</string>
+    <string name="unit_mb">МБ/с</string>
+</resources>
