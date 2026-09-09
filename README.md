@@ -9,12 +9,12 @@
 - **Lightweight:** Runs in the background without consuming significant system resources.
 
 ## 📱 Platform Support<br>
-| Platform |       Status     |<br>
-|  Windows | ✅ Supported     |<br>
-|   macOS  | ❌ Not supported |<br>
-|   Linux  | ❌ Not supported |<br>
-|  Android | ✅ Supported     |<br>
-|   iOS    | ❌ Not supported |<br>
+| Platform |⠀⠀⠀⠀⠀⠀Status     |<br>
+|  Windows | ⠀⠀✅ Supported⠀⠀|<br>
+|   macOS  |⠀❌ Not supported⠀|<br>
+|   Linux  |⠀❌ Not supported⠀|<br>
+|  Android |⠀⠀⠀✅ Supported⠀⠀|<br>
+|   iOS    |⠀❌ Not supported⠀|<br>
 
 
 ## 💖 Support the Project
